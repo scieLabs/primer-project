@@ -5,13 +5,32 @@
 }
 
 /* --------- body here ---------- */
-
+body {
+    background-image: url();
+}
 
 /* --------------- header here ---------------- */
-
+header {
+    position: sticky;
+    top: 0;
+}
 
 /* nav */
+nav {
+    background-color: black;
+    background-image: url(./img/coffee-bean-pile.jpg);
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    padding: 1rem;
+    column-gap: 10px;
+    row-gap: 1rem;
+    border-bottom: 5px solid pink;
+    }
 
+    a {
+        color: rgb(255, 5, 17);
+        text-decoration: none;
+    }
 
 /* hero */
 
@@ -22,12 +41,105 @@
 
 
 
-
 /* section 2 */
 
 
-/* section 3 */
 
+/* section 3 Vegtamsection*/
+.vegtamsection {
+    background-image: url(./img/stripes_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 30% 30% 30%;
+}
+
+.vegtamsection h2 {
+    color: rgb(0, 0, 0);
+
+    padding: 1rem;
+
+    background-image: url(./img/rusty_plate_1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    border-style: ridge;
+    border-color: darkgrey;
+    border-width: 3px;
+}
+
+.vegtamsection .small_image_1 {
+    padding: 0.2rem;
+    border-radius: 50%;  
+    max-width: 200px;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    border-style: ridge;
+    border-color: darkgrey;
+    border-width: 3px;
+}
+
+.vegtamsection .small_image_2 {
+    padding: 0.2rem;
+    border-radius: 50%;  
+    max-width: 200px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+
+    border-style: ridge;
+    border-color: darkgrey;
+    border-width: 3px;
+}
+
+/*this one is causing me grief - the image is too large and messes with the spacing of everything else*/
+.vegtamsection .large_image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    padding: 1rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    border-style: ridge;
+    border-color: darkgrey;
+    border-width: 3px;
+}
+
+.vegtamsection .text1 {
+    color: brown;
+
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.vegtamsection .text2 {
+    color: brown;
+
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 
 /* section 4 */
 
