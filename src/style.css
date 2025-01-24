@@ -48,17 +48,115 @@
 /* section 2 */
 
 #section2 {
-
+    margin-top: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #about-ema {
     display: grid;
-
-
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 5fr 1fr;
+    margin-bottom: 4rem;
+    border-radius: 25px;
 }
 
 #item1-headline {
-    color: blueviolet;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    align-content: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#item1-headline h2 {
+    justify-self: center;
+    align-self: center; /* doesnt work! */
+    word-spacing: 0.4em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+#item2-list {
+ /*   background-color: #fc466b; */
+    grid-column-start: 2;
+    grid-row-start: span 2;
+    justify-items: center;
+  /*  line-height: 2; */
+    padding-top: 1rem;
+    border-bottom-left-radius: 25px;
+ /*   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(252,70,107,1) 10%); */
+    background: rgb(131,58,180);
+    background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(252,70,107,0.9332107843137255) 12%, rgba(252, 70, 106, 0.404) 100%);
+}
+
+#item2-list h3 {
+    color: rgb(131,58,180,1);
+}
+
+#item2-list ul {
+    align-self: center; /* doesnt work. wtf */
+    list-style-type:disc;
+    line-break: strict; /* does it do anything? */
+    padding-left: 3rem;
+    padding-right: 2rem;
+    text-align: justify; /*to block text */
+    color: rgba(131,58,180, 0.788);
+    font-variant: small-caps;
+
+}
+
+#item2-list ul li {
+    max-width: 40ch;
+}
+
+#item3-desc {
+    background-color: rgb(164, 235, 235);
+    background-color: rgba(63, 94, 251, 0.658);
+    background: linear-gradient(140deg, rgba(63, 94, 251, 0.658) 0%, rgba(63, 94, 251, 0.24) 70%);
+    grid-column-start: 4;
+    grid-row-start: 2;
+    align-content: center;
+    font-size: small;
+    font-weight: 5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+#item3-desc p {
+    justify-self: center;
+    line-height: 2;
+    color: rgb(22, 46, 163);
+}
+
+#item4-footer {
+    background-color: rgb(6, 15, 59);
+    background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(63,94,251,1) 70%);
+    grid-column-start: 3;
+    grid-column-end: span 2;
+ /*   padding-top: 1rem; */
+    padding-left: 8rem;
+    border-bottom-right-radius: 25px;
+    font-size: small;
+    color: white;
+}
+
+#item5-img {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: rgb(63,94,251);
+
+}
+
+#item5-img img {
+    align-self: center;  /* this isnt doing anything, so I wrapped it in a border the same colour as the section below. if you can't beat 'em, join 'em */
+    border-style: solid;
+    border-color: rgb(63,94,251);
 }
 
 
